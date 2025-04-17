@@ -61,7 +61,7 @@ Build the Docker image with the Dockerfile in th root folder.
 docker build -t simpletimeservice .
 ```
 
-### 2. Run Container
+### 2. Run Docker Image
 
 With the image created, try to run the container of the image created in previos step,
 
@@ -74,6 +74,7 @@ Now open your browser and go to http://localhost:5000. You’ll see a JSON respo
 ## Take Aways
 
 **Smaller Docker Images**: Reduce security vulnerabilities, speed up build/pull times, and save storage/bandwidth, making deployments faster and more efficient.
+
 **Non-root Containers**: Improve security by limiting container permissions, preventing potential malicious processes from affecting the host system or other containers.
 
 ### TASK - 2
@@ -86,7 +87,7 @@ This folder structure is designed to deploy AWS infrastructure with Terraform. I
 
 This is the Folder structure used in this project
 
-`.
+.
 ├── main.tf
 ├── var.eks.tf
 ├── var.vpc.tf
@@ -112,7 +113,7 @@ This is the Folder structure used in this project
 │ │ ├── main.tf
 │ │ ├── variables.tf
 │ │ ├── outputs.tf
-`
+
 The Terraform folder structure is well-organized for managing infrastru\*\*cture across different environments (e.g., production) and modules
 
 ### Folder Breakdown
