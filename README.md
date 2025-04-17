@@ -71,6 +71,16 @@ docker run -d -p 5000:5000 simpletimeservice:latest
 
 Now open your browser and go to http://localhost:5000. You’ll see a JSON response with your IP and a UTC timestamp as similar to the above step.If there is no reponse or any other issue, Check with the Docker image again. Try to Troubleshoot by checking the logs of container to check weather the nodejs server is running without any intruptions.
 
+### 3. Push the Image
+
+```
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/q6v1w4r3
+docker tag simpletimeservice:latest public.ecr.aws/q6v1w4r3/simpletimeservice:latest
+docker push public.ecr.aws/q6v1w4r3/simpletimeservice:latest
+```
+
+These commands are used to authenticate with AWS Public Elastic Container Registry (ECR), tag a local Docker image, and push it to the ECR repository. First, the `aws ecr-public get-login-password` command retrieves a temporary authentication token for the public ECR in the us-east-1 region, which is piped into `docker login` to authenticate the Docker CLI with the ECR registry. Then, the `docker tag` command tags the local image simpletimeservice:latest with the full public ECR repository path. Finally, the `docker push` command uploads the tagged image to the specified public ECR repository so it can be accessed and used elsewhere.
+
 ## Take Aways
 
 **Smaller Docker Images**: Reduce security vulnerabilities, speed up build/pull times, and save storage/bandwidth, making deployments faster and more efficient.
