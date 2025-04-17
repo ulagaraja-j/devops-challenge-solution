@@ -91,28 +91,28 @@ This is the Folder structure used in this project
 ├── main.tf <br>
 ├── var.eks.tf <br>
 ├── var.vpc.tf <br>
-├── var.eks_ng.tf
-├── var.elb.tf
-├── outputs.tf
-├── dev.tfvars
-├── backend.tf
-├── modules/
-│ ├── vpc/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── eks/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── eks_ng/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── elb/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
+├── var.eks_ng.tf <br>
+├── var.elb.tf <br>
+├── outputs.tf <br>
+├── dev.tfvars <br>
+├── backend.tf <br>
+├── modules/ <br>
+│ ├── vpc/ <br>
+│ │ ├── main.tf <br>
+│ │ ├── variables.tf <br>
+│ │ ├── outputs.tf <br>
+│ ├── eks/ <br>
+│ │ ├── main.tf <br>
+│ │ ├── variables.tf <br>
+│ │ ├── outputs.tf <br>
+│ ├── eks_ng/ <br>
+│ │ ├── main.tf <br>
+│ │ ├── variables.tf <br>
+│ │ ├── outputs.tf <br>
+│ ├── elb/ <br>
+│ │ ├── main.tf <br>
+│ │ ├── variables.tf <br>
+│ │ ├── outputs.tf <br>
 
 The Terraform folder structure is well-organized for managing infrastru\*\*cture across different environments (e.g., production) and modules
 
