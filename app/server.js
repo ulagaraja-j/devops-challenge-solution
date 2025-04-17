@@ -7,7 +7,6 @@ app.set('trust proxy', true);
 app.get('/', (req, res) => {
     const timestamp = new Date().toISOString(); // Shows the UTC time by default
     const ip = req.ip;
-    console.log(req);
     res.json({
         timestamp,
         ip
