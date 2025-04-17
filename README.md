@@ -114,7 +114,7 @@ This is the Folder structure used in this project
 │ │ ├── variables.tf <br>
 │ │ ├── outputs.tf <br>
 
-The Terraform folder structure is well-organized for managing infrastru\*\*cture across different environments (e.g., production) and modules
+The Terraform folder structure is well-organized for managing infrastructure across different environments (e.g., production) and modules
 
 ### Folder Breakdown
 
@@ -123,7 +123,7 @@ The Terraform folder structure is well-organized for managing infrastru\*\*cture
 
 ### Files Breakdown
 
-**var.\*\*** Files: Defines variables specifically for the services to be imported. The variables are seperated into different files for better readability.
+**var.\*** Files: Defines variables specifically for the services to be imported. The variables are seperated into different files for better readability.
 
 **main.tf** Files: In `root` Folder , It defines the imports of modules to be used for provisioning the services. In `modules` subfolder, It defines all the configuration of the service dynamically.
 
