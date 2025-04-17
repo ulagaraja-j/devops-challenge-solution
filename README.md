@@ -87,32 +87,7 @@ This folder structure is designed to deploy AWS infrastructure with Terraform. I
 
 This is the Folder structure used in this project
 
-.
-├── main.tf
-├── var.eks.tf
-├── var.vpc.tf
-├── var.eks_ng.tf
-├── var.elb.tf
-├── outputs.tf
-├── dev.tfvars
-├── backend.tf
-├── modules/
-│ ├── vpc/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── eks/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── eks_ng/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
-│ ├── elb/
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ ├── outputs.tf
+<pre> ```text . ├── main.tf ├── var.eks.tf ├── var.vpc.tf ├── var.eks_ng.tf ├── var.elb.tf ├── outputs.tf ├── dev.tfvars ├── backend.tf ├── modules/ │ ├── vpc/ │ │ ├── main.tf │ │ ├── variables.tf │ │ ├── outputs.tf │ ├── eks/ │ │ ├── main.tf │ │ ├── variables.tf │ │ ├── outputs.tf │ ├── eks_ng/ │ │ ├── main.tf │ │ ├── variables.tf │ │ ├── outputs.tf │ ├── elb/ │ │ ├── main.tf │ │ ├── variables.tf │ │ ├── outputs.tf ``` </pre>
 
 The Terraform folder structure is well-organized for managing infrastru\*\*cture across different environments (e.g., production) and modules
 
